@@ -1,0 +1,123 @@
+{
+  "model_id": "trained-spatial-seed-linear-regression",
+  "version": "trained-spatial-seed-v1",
+  "artifact_type": "trained_linear_model",
+  "description": "Seed-trained spatial risk model exported from the current bootstrap dataset.",
+  "feature_order": [
+    "rain_72h",
+    "rain_24h",
+    "slope_deg",
+    "municipality_event_count",
+    "zone_event_count",
+    "recent_zone_event_count",
+    "intersecting_road_count",
+    "intersecting_road_length_km",
+    "rain_overlay_count",
+    "rain_overlay_peak_intensity",
+    "deforestation_proxy"
+  ],
+  "feature_means": {
+    "rain_72h": 120.5,
+    "rain_24h": 69.5,
+    "slope_deg": 23.5,
+    "municipality_event_count": 3.0,
+    "zone_event_count": 0.875,
+    "recent_zone_event_count": 0.625,
+    "intersecting_road_count": 1.375,
+    "intersecting_road_length_km": 42.75,
+    "rain_overlay_count": 1.625,
+    "rain_overlay_peak_intensity": 2.625,
+    "deforestation_proxy": 0.295
+  },
+  "feature_scales": {
+    "rain_72h": 32.140317,
+    "rain_24h": 21.430119,
+    "slope_deg": 5.09902,
+    "municipality_event_count": 1.0,
+    "zone_event_count": 0.599479,
+    "recent_zone_event_count": 0.484123,
+    "intersecting_road_count": 0.695971,
+    "intersecting_road_length_km": 23.726304,
+    "rain_overlay_count": 0.484123,
+    "rain_overlay_peak_intensity": 0.484123,
+    "deforestation_proxy": 0.24135
+  },
+  "coefficients": {
+    "rain_72h": 0.030776,
+    "rain_24h": -0.004809,
+    "slope_deg": 0.060493,
+    "municipality_event_count": 0.0,
+    "zone_event_count": -0.001029,
+    "recent_zone_event_count": 0.049832,
+    "intersecting_road_count": 0.011446,
+    "intersecting_road_length_km": -0.015553,
+    "rain_overlay_count": 0.032748,
+    "rain_overlay_peak_intensity": -0.025351,
+    "deforestation_proxy": 0.052593
+  },
+  "intercept": 0.531875,
+  "calibration": {
+    "method": "affine",
+    "slope": 1.949073,
+    "intercept": -0.425035,
+    "validation_metrics_before": {
+      "mae": 0.100751,
+      "rmse": 0.119163,
+      "max_abs_error": 0.192569,
+      "r2": 0.704853
+    },
+    "validation_metrics_after": {
+      "mae": 0.026424,
+      "rmse": 0.030798,
+      "max_abs_error": 0.050311,
+      "r2": 0.980284
+    },
+    "validation_rows": 8
+  },
+  "freshness_penalties": {
+    "Desactualizado": 0.04,
+    "Retrasado": 0.015
+  },
+  "confidence_scores": {
+    "Fresco": 2,
+    "Retrasado": 1,
+    "Desactualizado": 0,
+    "Estatico": 2
+  },
+  "bounds": {
+    "min": 0.08,
+    "max": 0.92
+  },
+  "training": {
+    "dataset": "frontend_seed_bootstrap",
+    "rows": 24,
+    "alpha": 0.75,
+    "trained_at": "2026-03-25T15:21:08+00:00",
+    "metrics": {
+      "mae": 0.043345,
+      "rmse": 0.070413,
+      "max_abs_error": 0.192569,
+      "r2": 0.862406
+    },
+    "phase_breakdown": {
+      "latest": 12,
+      "previous": 12
+    },
+    "splits": {
+      "train_rows": 16,
+      "validation_rows": 8,
+      "train_metrics": {
+        "mae": 0.014643,
+        "rmse": 0.018359,
+        "max_abs_error": 0.034927,
+        "r2": 0.988752
+      },
+      "validation_metrics": {
+        "mae": 0.100751,
+        "rmse": 0.119163,
+        "max_abs_error": 0.192569,
+        "r2": 0.704853
+      }
+    }
+  }
+}

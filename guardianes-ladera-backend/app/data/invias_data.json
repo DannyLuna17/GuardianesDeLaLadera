@@ -1,0 +1,786 @@
+{
+    "currentVersion": 10.41,
+    "id": 0,
+    "name": "Red Vial",
+    "type": "Feature Layer",
+    "description": "",
+    "copyrightText": "",
+    "defaultVisibility": true,
+    "editFieldsInfo": null,
+    "ownershipBasedAccessControlForFeatures": null,
+    "syncCanReturnChanges": false,
+    "relationships": [],
+    "isDataVersioned": false,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsAdvancedQueries": true,
+    "supportsValidateSQL": true,
+    "supportsCalculate": true,
+    "advancedQueryCapabilities": {
+     "supportsPagination": true,
+     "supportsQueryWithDistance": true,
+     "supportsReturningQueryExtent": true,
+     "supportsStatistics": true,
+     "supportsOrderBy": true,
+     "supportsDistinct": true
+    },
+    "geometryType": "esriGeometryPolyline",
+    "minScale": 0,
+    "maxScale": 0,
+    "extent": {
+     "xmin": -9098742.6557,
+     "ymin": -465260.5234999992,
+     "xmax": -7514009.6127,
+     "ymax": 1503392.6152000017,
+     "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+     }
+    },
+    "drawingInfo": {
+     "renderer": {
+      "type": "uniqueValue",
+      "field1": "ruleid_1",
+      "field2": null,
+      "field3": null,
+      "fieldDelimiter": ", ",
+      "defaultSymbol": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        255,
+        0,
+        0,
+        255
+       ],
+       "width": 4
+      },
+      "defaultLabel": "Invalid Rule",
+      "uniqueValueInfos": [
+       {
+        "symbol": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 4
+        },
+        "value": "1",
+        "label": "INVIAS",
+        "description": null
+       },
+       {
+        "symbol": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 4
+        },
+        "value": "2",
+        "label": "ANI",
+        "description": null
+       },
+       {
+        "symbol": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 4
+        },
+        "value": "3",
+        "label": "CONC. DEPT.",
+        "description": null
+       }
+      ]
+     },
+     "transparency": 0,
+     "labelingInfo": null
+    },
+    "hasM": false,
+    "hasZ": false,
+    "allowGeometryUpdates": false,
+    "hasAttachments": false,
+    "supportsApplyEditsWithGlobalIds": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "objectIdField": "objectid",
+    "globalIdField": "globalid",
+    "displayField": "key",
+    "typeIdField": "ruleid_1",
+    "fields": [
+     {
+      "name": "objectid",
+      "type": "esriFieldTypeOID",
+      "alias": "objectid",
+      "domain": null,
+      "editable": false,
+      "nullable": false
+     },
+     {
+      "name": "key",
+      "type": "esriFieldTypeString",
+      "alias": "CATEGORIZACION",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_Categorizacion_21",
+       "codedValues": [
+        {
+         "name": "Primer Orden",
+         "code": "1"
+        },
+        {
+         "name": "Segundo Orden",
+         "code": "2"
+        },
+        {
+         "name": "Tercer Orden",
+         "code": "3"
+        },
+        {
+         "name": "Por Definir",
+         "code": "4"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 17
+     },
+     {
+      "name": "cod_tramo",
+      "type": "esriFieldTypeString",
+      "alias": "cod_tramo",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 20
+     },
+     {
+      "name": "codigo_via",
+      "type": "esriFieldTypeString",
+      "alias": "codigo_via",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 10
+     },
+     {
+      "name": "pr_inicial",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "pr_inicial",
+      "domain": null,
+      "editable": true,
+      "nullable": true
+     },
+     {
+      "name": "dist_ini",
+      "type": "esriFieldTypeDouble",
+      "alias": "dist_ini",
+      "domain": null,
+      "editable": true,
+      "nullable": true
+     },
+     {
+      "name": "pr_finl",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "pr_finl",
+      "domain": null,
+      "editable": true,
+      "nullable": true
+     },
+     {
+      "name": "dist_fin",
+      "type": "esriFieldTypeDouble",
+      "alias": "dist_fin",
+      "domain": null,
+      "editable": true,
+      "nullable": true
+     },
+     {
+      "name": "territorial",
+      "type": "esriFieldTypeString",
+      "alias": "territorial",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_Territorial",
+       "codedValues": [
+        {
+         "name": "Chocó",
+         "code": "10"
+        },
+        {
+         "name": "Córdoba",
+         "code": "11"
+        },
+        {
+         "name": "Cundinamarca",
+         "code": "12"
+        },
+        {
+         "name": "Guajira",
+         "code": "13"
+        },
+        {
+         "name": "Huila",
+         "code": "14"
+        },
+        {
+         "name": "Magdalena",
+         "code": "15"
+        },
+        {
+         "name": "Meta",
+         "code": "16"
+        },
+        {
+         "name": "Nariño",
+         "code": "17"
+        },
+        {
+         "name": "Norte de Santander",
+         "code": "18"
+        },
+        {
+         "name": "Putumayo",
+         "code": "19"
+        },
+        {
+         "name": "Quindío",
+         "code": "20"
+        },
+        {
+         "name": "Risaralda",
+         "code": "21"
+        },
+        {
+         "name": "Santander",
+         "code": "22"
+        },
+        {
+         "name": "Sucre",
+         "code": "23"
+        },
+        {
+         "name": "Tolima",
+         "code": "24"
+        },
+        {
+         "name": "Valle del Cauca",
+         "code": "25"
+        },
+        {
+         "name": "Ocaña",
+         "code": "26"
+        },
+        {
+         "name": "Planta Central",
+         "code": "27"
+        },
+        {
+         "name": "Antioquia",
+         "code": "01"
+        },
+        {
+         "name": "Atlántico",
+         "code": "02"
+        },
+        {
+         "name": "Bolívar",
+         "code": "03"
+        },
+        {
+         "name": "Boyacá",
+         "code": "04"
+        },
+        {
+         "name": "Caldas",
+         "code": "05"
+        },
+        {
+         "name": "Caquetá",
+         "code": "06"
+        },
+        {
+         "name": "Casanare",
+         "code": "07"
+        },
+        {
+         "name": "Cauca",
+         "code": "08"
+        },
+        {
+         "name": "Cesar",
+         "code": "09"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 2
+     },
+     {
+      "name": "tramo",
+      "type": "esriFieldTypeString",
+      "alias": "tramo",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 120
+     },
+     {
+      "name": "sector",
+      "type": "esriFieldTypeString",
+      "alias": "sector",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 120
+     },
+     {
+      "name": "administrador",
+      "type": "esriFieldTypeString",
+      "alias": "administrador",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_Administrador",
+       "codedValues": [
+        {
+         "name": "INVIAS",
+         "code": "1"
+        },
+        {
+         "name": "ANI",
+         "code": "2"
+        },
+        {
+         "name": "CONC. DEPT.",
+         "code": "3"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 1
+     },
+     {
+      "name": "amv",
+      "type": "esriFieldTypeString",
+      "alias": "amv",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_AMV",
+       "codedValues": [
+        {
+         "name": "Grupo 1",
+         "code": "1"
+        },
+        {
+         "name": "Grupo 2",
+         "code": "2"
+        },
+        {
+         "name": "Grupo 3",
+         "code": "3"
+        },
+        {
+         "name": "Grupo 4",
+         "code": "4"
+        },
+        {
+         "name": "Grupo 5",
+         "code": "5"
+        },
+        {
+         "name": "Grupo 6",
+         "code": "6"
+        },
+        {
+         "name": "Grupo 7",
+         "code": "7"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 1
+     },
+     {
+      "name": "superficie",
+      "type": "esriFieldTypeString",
+      "alias": "superficie",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_Superficie",
+       "codedValues": [
+        {
+         "name": "Pavimentada",
+         "code": "1"
+        },
+        {
+         "name": "Sin Pavimentar",
+         "code": "2"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 1
+     },
+     {
+      "name": "calzada",
+      "type": "esriFieldTypeString",
+      "alias": "calzada",
+      "domain": {
+       "type": "codedValue",
+       "name": "Dom_Calzada",
+       "codedValues": [
+        {
+         "name": "Sencilla",
+         "code": "1"
+        },
+        {
+         "name": "Doble",
+         "code": "2"
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true,
+      "length": 1
+     },
+     {
+      "name": "ruta",
+      "type": "esriFieldTypeString",
+      "alias": "ruta",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 5
+     },
+     {
+      "name": "fuente",
+      "type": "esriFieldTypeString",
+      "alias": "fuente",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 50
+     },
+     {
+      "name": "fecha_fuente",
+      "type": "esriFieldTypeDate",
+      "alias": "FECHA_ACT",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 8
+     },
+     {
+      "name": "fecha_actualiz",
+      "type": "esriFieldTypeDate",
+      "alias": "fecha_actualiz",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 8
+     },
+     {
+      "name": "concesion",
+      "type": "esriFieldTypeString",
+      "alias": "CONCESIÓN",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 100
+     },
+     {
+      "name": "observacion_invias",
+      "type": "esriFieldTypeString",
+      "alias": "OBSERVACION INVIAS",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 200
+     },
+     {
+      "name": "estado",
+      "type": "esriFieldTypeString",
+      "alias": "estado",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 150
+     },
+     {
+      "name": "observacion_igac",
+      "type": "esriFieldTypeString",
+      "alias": "OBSERVACION IGAC",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 200
+     },
+     {
+      "name": "reversion",
+      "type": "esriFieldTypeString",
+      "alias": "REVERSIÓN",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 100
+     },
+     {
+      "name": "pr_ini_con",
+      "type": "esriFieldTypeString",
+      "alias": "pr_ini_con",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 255
+     },
+     {
+      "name": "pr_fin_con",
+      "type": "esriFieldTypeString",
+      "alias": "pr_fin_con",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 255
+     },
+     {
+      "name": "ruleid_1",
+      "type": "esriFieldTypeInteger",
+      "alias": "ruleid_1",
+      "domain": {
+       "type": "codedValue",
+       "name": "Red_Vial_V5_Rep_2_7_1_1_Rules",
+       "codedValues": [
+        {
+         "name": "INVIAS",
+         "code": 1
+        },
+        {
+         "name": "ANI",
+         "code": 2
+        },
+        {
+         "name": "CONC. DEPT.",
+         "code": 3
+        },
+        {
+         "name": "Free Representation",
+         "code": -1
+        }
+       ]
+      },
+      "editable": true,
+      "nullable": true
+     },
+     {
+      "name": "globalid",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "globalid",
+      "domain": null,
+      "editable": false,
+      "nullable": false,
+      "length": 38
+     }
+    ],
+    "indexes": [
+     {
+      "name": "uuid_1539",
+      "fields": "globalid",
+      "isAscending": true,
+      "isUnique": false,
+      "description": ""
+     },
+     {
+      "name": "r1539_sde_rowid_uk",
+      "fields": "objectid",
+      "isAscending": true,
+      "isUnique": true,
+      "description": ""
+     },
+     {
+      "name": "a850_ix1",
+      "fields": "shape",
+      "isAscending": true,
+      "isUnique": true,
+      "description": ""
+     }
+    ],
+    "dateFieldsTimeReference": {
+     "timeZone": "UTC",
+     "respectsDaylightSaving": false
+    },
+    "types": [
+     {
+      "id": 1,
+      "name": "INVIAS",
+      "domains": {
+       "key": {"type": "inherited"},
+       "territorial": {"type": "inherited"},
+       "administrador": {"type": "inherited"},
+       "amv": {"type": "inherited"},
+       "superficie": {"type": "inherited"},
+       "calzada": {"type": "inherited"},
+       "ruleid_1": {"type": "inherited"}
+      },
+      "templates": [
+       {
+        "name": "INVIAS",
+        "description": "",
+        "prototype": {
+         "attributes": {
+          "ruleid_1": 1,
+          "pr_fin_con": null,
+          "key": null,
+          "cod_tramo": null,
+          "codigo_via": null,
+          "pr_inicial": null,
+          "dist_ini": null,
+          "pr_finl": null,
+          "dist_fin": null,
+          "territorial": null,
+          "tramo": null,
+          "sector": null,
+          "administrador": null,
+          "amv": null,
+          "superficie": null,
+          "calzada": null,
+          "ruta": null,
+          "fuente": null,
+          "fecha_fuente": null,
+          "fecha_actualiz": null,
+          "concesion": null,
+          "observacion_invias": null,
+          "estado": null,
+          "observacion_igac": null,
+          "reversion": null,
+          "pr_ini_con": null
+         }
+        },
+        "drawingTool": "esriFeatureEditToolLine"
+       }
+      ]
+     },
+     {
+      "id": 2,
+      "name": "ANI",
+      "domains": {
+       "key": {"type": "inherited"},
+       "territorial": {"type": "inherited"},
+       "administrador": {"type": "inherited"},
+       "amv": {"type": "inherited"},
+       "superficie": {"type": "inherited"},
+       "calzada": {"type": "inherited"},
+       "ruleid_1": {"type": "inherited"}
+      },
+      "templates": [
+       {
+        "name": "ANI",
+        "description": "",
+        "prototype": {
+         "attributes": {
+          "ruleid_1": 2,
+          "pr_fin_con": null,
+          "key": null,
+          "cod_tramo": null,
+          "codigo_via": null,
+          "pr_inicial": null,
+          "dist_ini": null,
+          "pr_finl": null,
+          "dist_fin": null,
+          "territorial": null,
+          "tramo": null,
+          "sector": null,
+          "administrador": null,
+          "amv": null,
+          "superficie": null,
+          "calzada": null,
+          "ruta": null,
+          "fuente": null,
+          "fecha_fuente": null,
+          "fecha_actualiz": null,
+          "concesion": null,
+          "observacion_invias": null,
+          "estado": null,
+          "observacion_igac": null,
+          "reversion": null,
+          "pr_ini_con": null
+         }
+        },
+        "drawingTool": "esriFeatureEditToolLine"
+       }
+      ]
+     },
+     {
+      "id": 3,
+      "name": "CONC. DEPT.",
+      "domains": {
+       "key": {"type": "inherited"},
+       "territorial": {"type": "inherited"},
+       "administrador": {"type": "inherited"},
+       "amv": {"type": "inherited"},
+       "superficie": {"type": "inherited"},
+       "calzada": {"type": "inherited"},
+       "ruleid_1": {"type": "inherited"}
+      },
+      "templates": [
+       {
+        "name": "CONC. DEPT.",
+        "description": "",
+        "prototype": {
+         "attributes": {
+          "ruleid_1": 3,
+          "pr_fin_con": null,
+          "key": null,
+          "cod_tramo": null,
+          "codigo_via": null,
+          "pr_inicial": null,
+          "dist_ini": null,
+          "pr_finl": null,
+          "dist_fin": null,
+          "territorial": null,
+          "tramo": null,
+          "sector": null,
+          "administrador": null,
+          "amv": null,
+          "superficie": null,
+          "calzada": null,
+          "ruta": null,
+          "fuente": null,
+          "fecha_fuente": null,
+          "fecha_actualiz": null,
+          "concesion": null,
+          "observacion_invias": null,
+          "estado": null,
+          "observacion_igac": null,
+          "reversion": null,
+          "pr_ini_con": null
+         }
+        },
+        "drawingTool": "esriFeatureEditToolLine"
+       }
+      ]
+     }
+    ],
+    "templates": [],
+    "maxRecordCount": 1000,
+    "supportedQueryFormats": "JSON, AMF, geoJSON",
+    "capabilities": "Extract,Query",
+    "useStandardizedQueries": true
+   }

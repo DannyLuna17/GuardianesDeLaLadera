@@ -1,0 +1,952 @@
+{
+  "dataset_id": "spatial-risk-training-dataset",
+  "version": "training-spatial-seed-v1",
+  "artifact_type": "training_dataset",
+  "description": "Versioned training dataset exported from the current bootstrap spatial features and labels.",
+  "label_name": "target_score",
+  "feature_order": [
+    "rain_72h",
+    "rain_24h",
+    "slope_deg",
+    "municipality_event_count",
+    "zone_event_count",
+    "recent_zone_event_count",
+    "intersecting_road_count",
+    "intersecting_road_length_km",
+    "rain_overlay_count",
+    "rain_overlay_peak_intensity",
+    "deforestation_proxy"
+  ],
+  "rows": [
+    {
+      "zoneId": "moc-01",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.78,
+      "drivers": {
+        "rain_6h": 46,
+        "rain_24h": 112,
+        "rain_72h": 186,
+        "slope_deg": 31,
+        "geology_class": "Coluvion activo",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.62
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 2,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 186.0,
+        "rain_24h": 112.0,
+        "slope_deg": 31.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 2.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.62
+      }
+    },
+    {
+      "zoneId": "moc-01",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.75,
+      "drivers": {
+        "rain_6h": 42,
+        "rain_24h": 105,
+        "rain_72h": 175,
+        "slope_deg": 31,
+        "geology_class": "Coluvion activo",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.62
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 2,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 175.0,
+        "rain_24h": 105.0,
+        "slope_deg": 31.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 2.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.62
+      }
+    },
+    {
+      "zoneId": "moc-02",
+      "phase": "latest",
+      "split": "validation",
+      "targetScore": 0.62,
+      "drivers": {
+        "rain_6h": 38,
+        "rain_24h": 96,
+        "rain_72h": 152,
+        "slope_deg": 26,
+        "geology_class": "Depositos aluviales",
+        "soil_class": "Franco limoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 152.0,
+        "rain_24h": 96.0,
+        "slope_deg": 26.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "moc-02",
+      "phase": "previous",
+      "split": "validation",
+      "targetScore": 0.65,
+      "drivers": {
+        "rain_6h": 34,
+        "rain_24h": 89,
+        "rain_72h": 141,
+        "slope_deg": 26,
+        "geology_class": "Depositos aluviales",
+        "soil_class": "Franco limoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 141.0,
+        "rain_24h": 89.0,
+        "slope_deg": 26.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "moc-03",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.48,
+      "drivers": {
+        "rain_6h": 26,
+        "rain_24h": 74,
+        "rain_72h": 118,
+        "slope_deg": 22,
+        "geology_class": "Roca metamorfica",
+        "soil_class": "Franco arenoso",
+        "deforestation_proxy": 0.41
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 118.0,
+        "rain_24h": 74.0,
+        "slope_deg": 22.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.41
+      }
+    },
+    {
+      "zoneId": "moc-03",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.5,
+      "drivers": {
+        "rain_6h": 22,
+        "rain_24h": 67,
+        "rain_72h": 107,
+        "slope_deg": 22,
+        "geology_class": "Roca metamorfica",
+        "soil_class": "Franco arenoso",
+        "deforestation_proxy": 0.41
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 107.0,
+        "rain_24h": 67.0,
+        "slope_deg": 22.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.41
+      }
+    },
+    {
+      "zoneId": "moc-04",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.29,
+      "drivers": {
+        "rain_6h": 18,
+        "rain_24h": 54,
+        "rain_72h": 92,
+        "slope_deg": 18,
+        "geology_class": "Terrazas antiguas",
+        "soil_class": "Franco arcilloso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 28.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 92.0,
+        "rain_24h": 54.0,
+        "slope_deg": 18.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 28.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "moc-04",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.3,
+      "drivers": {
+        "rain_6h": 14,
+        "rain_24h": 47,
+        "rain_72h": 81,
+        "slope_deg": 18,
+        "geology_class": "Terrazas antiguas",
+        "soil_class": "Franco arcilloso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 28.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 81.0,
+        "rain_24h": 47.0,
+        "slope_deg": 18.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 28.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pas-01",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.57,
+      "drivers": {
+        "rain_6h": 24,
+        "rain_24h": 68,
+        "rain_72h": 121,
+        "slope_deg": 24,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 36.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 121.0,
+        "rain_24h": 68.0,
+        "slope_deg": 24.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 36.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pas-01",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.5599999999999999,
+      "drivers": {
+        "rain_6h": 20,
+        "rain_24h": 61,
+        "rain_72h": 110,
+        "slope_deg": 24,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 36.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 110.0,
+        "rain_24h": 61.0,
+        "slope_deg": 24.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 36.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pas-02",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.42,
+      "drivers": {
+        "rain_6h": 19,
+        "rain_24h": 58,
+        "rain_72h": 104,
+        "slope_deg": 20,
+        "geology_class": "Lacustre",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.33
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 54.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 104.0,
+        "rain_24h": 58.0,
+        "slope_deg": 20.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 54.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.33
+      }
+    },
+    {
+      "zoneId": "pas-02",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.39999999999999997,
+      "drivers": {
+        "rain_6h": 15,
+        "rain_24h": 51,
+        "rain_72h": 93,
+        "slope_deg": 20,
+        "geology_class": "Lacustre",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.33
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 54.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 93.0,
+        "rain_24h": 51.0,
+        "slope_deg": 20.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 54.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.33
+      }
+    },
+    {
+      "zoneId": "pas-03",
+      "phase": "latest",
+      "split": "validation",
+      "targetScore": 0.22,
+      "drivers": {
+        "rain_6h": 11,
+        "rain_24h": 38,
+        "rain_72h": 76,
+        "slope_deg": 14,
+        "geology_class": "Material volcanico",
+        "soil_class": "Franco arenoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 0,
+        "intersecting_road_length_km": 0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 76.0,
+        "rain_24h": 38.0,
+        "slope_deg": 14.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pas-03",
+      "phase": "previous",
+      "split": "validation",
+      "targetScore": 0.19,
+      "drivers": {
+        "rain_6h": 7,
+        "rain_24h": 31,
+        "rain_72h": 65,
+        "slope_deg": 14,
+        "geology_class": "Material volcanico",
+        "soil_class": "Franco arenoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 0,
+        "intersecting_road_length_km": 0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 65.0,
+        "rain_24h": 31.0,
+        "slope_deg": 14.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pas-04",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.66,
+      "drivers": {
+        "rain_6h": 31,
+        "rain_24h": 84,
+        "rain_72h": 141,
+        "slope_deg": 28,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.48
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 0,
+        "intersecting_road_length_km": 0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 141.0,
+        "rain_24h": 84.0,
+        "slope_deg": 28.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.48
+      }
+    },
+    {
+      "zoneId": "pas-04",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.6900000000000001,
+      "drivers": {
+        "rain_6h": 27,
+        "rain_24h": 77,
+        "rain_72h": 130,
+        "slope_deg": 28,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.48
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 0,
+        "intersecting_road_length_km": 0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 2,
+        "rain_overlay_peak_label": "media"
+      },
+      "featureVector": {
+        "rain_72h": 130.0,
+        "rain_24h": 77.0,
+        "slope_deg": 28.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 2.0,
+        "deforestation_proxy": 0.48
+      }
+    },
+    {
+      "zoneId": "pop-01",
+      "phase": "latest",
+      "split": "validation",
+      "targetScore": 0.51,
+      "drivers": {
+        "rain_6h": 22,
+        "rain_24h": 66,
+        "rain_72h": 124,
+        "slope_deg": 23,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arcilloso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 124.0,
+        "rain_24h": 66.0,
+        "slope_deg": 23.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pop-01",
+      "phase": "previous",
+      "split": "validation",
+      "targetScore": 0.53,
+      "drivers": {
+        "rain_6h": 18,
+        "rain_24h": 59,
+        "rain_72h": 113,
+        "slope_deg": 23,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arcilloso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 113.0,
+        "rain_24h": 59.0,
+        "slope_deg": 23.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pop-02",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.31,
+      "drivers": {
+        "rain_6h": 14,
+        "rain_24h": 42,
+        "rain_72h": 88,
+        "slope_deg": 16,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arenoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 22.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 88.0,
+        "rain_24h": 42.0,
+        "slope_deg": 16.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 22.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pop-02",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.32,
+      "drivers": {
+        "rain_6h": 10,
+        "rain_24h": 35,
+        "rain_72h": 77,
+        "slope_deg": 16,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arenoso"
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 0,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 22.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 77.0,
+        "rain_24h": 35.0,
+        "slope_deg": 16.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 22.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      }
+    },
+    {
+      "zoneId": "pop-03",
+      "phase": "latest",
+      "split": "train",
+      "targetScore": 0.74,
+      "drivers": {
+        "rain_6h": 34,
+        "rain_24h": 92,
+        "rain_72h": 158,
+        "slope_deg": 29,
+        "geology_class": "Lahares antiguos",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.52
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 62.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 158.0,
+        "rain_24h": 92.0,
+        "slope_deg": 29.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 62.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.52
+      }
+    },
+    {
+      "zoneId": "pop-03",
+      "phase": "previous",
+      "split": "train",
+      "targetScore": 0.74,
+      "drivers": {
+        "rain_6h": 30,
+        "rain_24h": 85,
+        "rain_72h": 147,
+        "slope_deg": 29,
+        "geology_class": "Lahares antiguos",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.52
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 1,
+        "intersecting_road_count": 2,
+        "intersecting_road_length_km": 62.0,
+        "rain_overlay_count": 2,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 147.0,
+        "rain_24h": 85.0,
+        "slope_deg": 29.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 62.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.52
+      }
+    },
+    {
+      "zoneId": "pop-04",
+      "phase": "latest",
+      "split": "validation",
+      "targetScore": 0.81,
+      "drivers": {
+        "rain_6h": 39,
+        "rain_24h": 104,
+        "rain_72h": 172,
+        "slope_deg": 33,
+        "geology_class": "Roca volcanica alterada",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.58
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 172.0,
+        "rain_24h": 104.0,
+        "slope_deg": 33.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.58
+      }
+    },
+    {
+      "zoneId": "pop-04",
+      "phase": "previous",
+      "split": "validation",
+      "targetScore": 0.8,
+      "drivers": {
+        "rain_6h": 35,
+        "rain_24h": 97,
+        "rain_72h": 161,
+        "slope_deg": 33,
+        "geology_class": "Roca volcanica alterada",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.58
+      },
+      "featureSnapshot": {
+        "municipality_event_count": 3,
+        "zone_event_count": 1,
+        "recent_zone_event_count": 0,
+        "intersecting_road_count": 1,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 1,
+        "rain_overlay_peak_intensity": 3,
+        "rain_overlay_peak_label": "alta"
+      },
+      "featureVector": {
+        "rain_72h": 161.0,
+        "rain_24h": 97.0,
+        "slope_deg": 33.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 1.0,
+        "intersecting_road_length_km": 40.0,
+        "rain_overlay_count": 1.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.58
+      }
+    }
+  ],
+  "summary": {
+    "rows": 24,
+    "zones": 12,
+    "splits": {
+      "train_rows": 16,
+      "validation_rows": 8
+    },
+    "phase_breakdown": {
+      "latest": 12,
+      "previous": 12
+    },
+    "zone_ids": [
+      "moc-01",
+      "moc-02",
+      "moc-03",
+      "moc-04",
+      "pas-01",
+      "pas-02",
+      "pas-03",
+      "pas-04",
+      "pop-01",
+      "pop-02",
+      "pop-03",
+      "pop-04"
+    ]
+  },
+  "provenance": {
+    "source": "frontend_seed_bootstrap",
+    "exported_at": "2026-03-25T15:36:20+00:00"
+  }
+}

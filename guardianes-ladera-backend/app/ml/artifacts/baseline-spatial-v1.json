@@ -1,0 +1,41 @@
+{
+  "model_id": "baseline-risk-scorer",
+  "version": "baseline-spatial-v1",
+  "description": "Deterministic baseline scoring artifact enriched with zone-level spatial features until the trained predictive model is integrated.",
+  "weights": {
+    "rain_72h": 0.26,
+    "rain_24h": 0.17,
+    "slope_deg": 0.14,
+    "municipality_event_count": 0.06,
+    "zone_event_count": 0.11,
+    "intersecting_road_length_km": 0.09,
+    "rain_overlay_peak_intensity": 0.07,
+    "rain_overlay_count": 0.03,
+    "deforestation_proxy": 0.05
+  },
+  "normalizers": {
+    "rain_72h": 220.0,
+    "rain_24h": 120.0,
+    "slope_deg": 35.0,
+    "municipality_event_count": 6.0,
+    "zone_event_count": 3.0,
+    "intersecting_road_length_km": 70.0,
+    "rain_overlay_peak_intensity": 3.0,
+    "rain_overlay_count": 2.0,
+    "deforestation_proxy": 1.0
+  },
+  "freshness_penalties": {
+    "Desactualizado": 0.04,
+    "Retrasado": 0.015
+  },
+  "confidence_scores": {
+    "Fresco": 2,
+    "Retrasado": 1,
+    "Desactualizado": 0,
+    "Estatico": 2
+  },
+  "bounds": {
+    "min": 0.08,
+    "max": 0.92
+  }
+}

@@ -1,0 +1,1217 @@
+{
+  "municipalities": [
+    {
+      "id": "mocoa",
+      "name": "Mocoa",
+      "center": [
+        1.147,
+        -76.648
+      ],
+      "zoom": 12
+    },
+    {
+      "id": "pasto",
+      "name": "Pasto",
+      "center": [
+        1.214,
+        -77.281
+      ],
+      "zoom": 12
+    },
+    {
+      "id": "popayan",
+      "name": "Popayan",
+      "center": [
+        2.444,
+        -76.614
+      ],
+      "zoom": 12
+    }
+  ],
+  "riskColors": {
+    "Verde": "#2e7d32",
+    "Amarillo": "#f9a825",
+    "Naranja": "#ef6c00",
+    "Rojo": "#c62828"
+  },
+  "riskOrder": {
+    "Verde": 0,
+    "Amarillo": 1,
+    "Naranja": 2,
+    "Rojo": 3
+  },
+  "zones": [
+    {
+      "id": "moc-01",
+      "name": "Vereda Alto Afan",
+      "municipality": "Mocoa",
+      "type": "Vereda",
+      "centroid": [
+        1.165,
+        -76.67
+      ],
+      "polygon": [
+        [
+          1.173,
+          -76.683
+        ],
+        [
+          1.173,
+          -76.655
+        ],
+        [
+          1.155,
+          -76.655
+        ],
+        [
+          1.155,
+          -76.683
+        ]
+      ],
+      "riskScore": 0.78,
+      "confidence": "Alta",
+      "drivers": {
+        "rain_6h": 46,
+        "rain_24h": 112,
+        "rain_72h": 186,
+        "slope_deg": 31,
+        "geology_class": "Coluvion activo",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.62
+      },
+      "exposure": {
+        "population_estimate": 1620,
+        "households_estimate": 420
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-moc-45",
+          "inv-moc-11"
+        ]
+      }
+    },
+    {
+      "id": "moc-02",
+      "name": "Barrio San Miguel",
+      "municipality": "Mocoa",
+      "type": "Barrio",
+      "centroid": [
+        1.152,
+        -76.652
+      ],
+      "polygon": [
+        [
+          1.16,
+          -76.662
+        ],
+        [
+          1.16,
+          -76.642
+        ],
+        [
+          1.145,
+          -76.642
+        ],
+        [
+          1.145,
+          -76.662
+        ]
+      ],
+      "riskScore": 0.62,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 38,
+        "rain_24h": 96,
+        "rain_72h": 152,
+        "slope_deg": 26,
+        "geology_class": "Depositos aluviales",
+        "soil_class": "Franco limoso"
+      },
+      "exposure": {
+        "population_estimate": 3280,
+        "households_estimate": 880
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-moc-11"
+        ]
+      }
+    },
+    {
+      "id": "moc-03",
+      "name": "Vereda La Esmeralda",
+      "municipality": "Mocoa",
+      "type": "Vereda",
+      "centroid": [
+        1.131,
+        -76.635
+      ],
+      "polygon": [
+        [
+          1.14,
+          -76.646
+        ],
+        [
+          1.14,
+          -76.62
+        ],
+        [
+          1.122,
+          -76.62
+        ],
+        [
+          1.122,
+          -76.646
+        ]
+      ],
+      "riskScore": 0.48,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 26,
+        "rain_24h": 74,
+        "rain_72h": 118,
+        "slope_deg": 22,
+        "geology_class": "Roca metamorfica",
+        "soil_class": "Franco arenoso",
+        "deforestation_proxy": 0.41
+      },
+      "exposure": {
+        "population_estimate": 980,
+        "households_estimate": 260
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-moc-45"
+        ]
+      }
+    },
+    {
+      "id": "moc-04",
+      "name": "Barrio Obrero",
+      "municipality": "Mocoa",
+      "type": "Barrio",
+      "centroid": [
+        1.146,
+        -76.674
+      ],
+      "polygon": [
+        [
+          1.154,
+          -76.685
+        ],
+        [
+          1.154,
+          -76.664
+        ],
+        [
+          1.138,
+          -76.664
+        ],
+        [
+          1.138,
+          -76.685
+        ]
+      ],
+      "riskScore": 0.29,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 18,
+        "rain_24h": 54,
+        "rain_72h": 92,
+        "slope_deg": 18,
+        "geology_class": "Terrazas antiguas",
+        "soil_class": "Franco arcilloso"
+      },
+      "exposure": {
+        "population_estimate": 4120,
+        "households_estimate": 1120
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-moc-11"
+        ]
+      }
+    },
+    {
+      "id": "pas-01",
+      "name": "Barrio Panorama",
+      "municipality": "Pasto",
+      "type": "Barrio",
+      "centroid": [
+        1.227,
+        -77.268
+      ],
+      "polygon": [
+        [
+          1.236,
+          -77.278
+        ],
+        [
+          1.236,
+          -77.257
+        ],
+        [
+          1.219,
+          -77.257
+        ],
+        [
+          1.219,
+          -77.278
+        ]
+      ],
+      "riskScore": 0.57,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 24,
+        "rain_24h": 68,
+        "rain_72h": 121,
+        "slope_deg": 24,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol"
+      },
+      "exposure": {
+        "population_estimate": 5120,
+        "households_estimate": 1360
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pas-25"
+        ]
+      }
+    },
+    {
+      "id": "pas-02",
+      "name": "Vereda El Encano",
+      "municipality": "Pasto",
+      "type": "Vereda",
+      "centroid": [
+        1.207,
+        -77.248
+      ],
+      "polygon": [
+        [
+          1.216,
+          -77.258
+        ],
+        [
+          1.216,
+          -77.235
+        ],
+        [
+          1.198,
+          -77.235
+        ],
+        [
+          1.198,
+          -77.258
+        ]
+      ],
+      "riskScore": 0.42,
+      "confidence": "Baja",
+      "drivers": {
+        "rain_6h": 19,
+        "rain_24h": 58,
+        "rain_72h": 104,
+        "slope_deg": 20,
+        "geology_class": "Lacustre",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.33
+      },
+      "exposure": {
+        "population_estimate": 1220,
+        "households_estimate": 310
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pas-03"
+        ]
+      }
+    },
+    {
+      "id": "pas-03",
+      "name": "Barrio La Rosa",
+      "municipality": "Pasto",
+      "type": "Barrio",
+      "centroid": [
+        1.216,
+        -77.294
+      ],
+      "polygon": [
+        [
+          1.224,
+          -77.305
+        ],
+        [
+          1.224,
+          -77.284
+        ],
+        [
+          1.208,
+          -77.284
+        ],
+        [
+          1.208,
+          -77.305
+        ]
+      ],
+      "riskScore": 0.22,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 11,
+        "rain_24h": 38,
+        "rain_72h": 76,
+        "slope_deg": 14,
+        "geology_class": "Material volcanico",
+        "soil_class": "Franco arenoso"
+      },
+      "exposure": {
+        "population_estimate": 3840,
+        "households_estimate": 980
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pas-25"
+        ]
+      }
+    },
+    {
+      "id": "pas-04",
+      "name": "Vereda Catambuco",
+      "municipality": "Pasto",
+      "type": "Vereda",
+      "centroid": [
+        1.188,
+        -77.305
+      ],
+      "polygon": [
+        [
+          1.197,
+          -77.318
+        ],
+        [
+          1.197,
+          -77.292
+        ],
+        [
+          1.178,
+          -77.292
+        ],
+        [
+          1.178,
+          -77.318
+        ]
+      ],
+      "riskScore": 0.66,
+      "confidence": "Alta",
+      "drivers": {
+        "rain_6h": 31,
+        "rain_24h": 84,
+        "rain_72h": 141,
+        "slope_deg": 28,
+        "geology_class": "Material volcanico",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.48
+      },
+      "exposure": {
+        "population_estimate": 1460,
+        "households_estimate": 360
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pas-25",
+          "inv-pas-03"
+        ]
+      }
+    },
+    {
+      "id": "pop-01",
+      "name": "Barrio La Paz",
+      "municipality": "Popayan",
+      "type": "Barrio",
+      "centroid": [
+        2.452,
+        -76.606
+      ],
+      "polygon": [
+        [
+          2.46,
+          -76.618
+        ],
+        [
+          2.46,
+          -76.596
+        ],
+        [
+          2.444,
+          -76.596
+        ],
+        [
+          2.444,
+          -76.618
+        ]
+      ],
+      "riskScore": 0.51,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 22,
+        "rain_24h": 66,
+        "rain_72h": 124,
+        "slope_deg": 23,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arcilloso"
+      },
+      "exposure": {
+        "population_estimate": 5820,
+        "households_estimate": 1480
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pop-20"
+        ]
+      }
+    },
+    {
+      "id": "pop-02",
+      "name": "Barrio El Empedrado",
+      "municipality": "Popayan",
+      "type": "Barrio",
+      "centroid": [
+        2.437,
+        -76.624
+      ],
+      "polygon": [
+        [
+          2.445,
+          -76.636
+        ],
+        [
+          2.445,
+          -76.612
+        ],
+        [
+          2.428,
+          -76.612
+        ],
+        [
+          2.428,
+          -76.636
+        ]
+      ],
+      "riskScore": 0.31,
+      "confidence": "Media",
+      "drivers": {
+        "rain_6h": 14,
+        "rain_24h": 42,
+        "rain_72h": 88,
+        "slope_deg": 16,
+        "geology_class": "Depositos fluviales",
+        "soil_class": "Franco arenoso"
+      },
+      "exposure": {
+        "population_estimate": 4680,
+        "households_estimate": 1240
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pop-20"
+        ]
+      }
+    },
+    {
+      "id": "pop-03",
+      "name": "Vereda Puelenje",
+      "municipality": "Popayan",
+      "type": "Vereda",
+      "centroid": [
+        2.466,
+        -76.63
+      ],
+      "polygon": [
+        [
+          2.474,
+          -76.644
+        ],
+        [
+          2.474,
+          -76.617
+        ],
+        [
+          2.456,
+          -76.617
+        ],
+        [
+          2.456,
+          -76.644
+        ]
+      ],
+      "riskScore": 0.74,
+      "confidence": "Alta",
+      "drivers": {
+        "rain_6h": 34,
+        "rain_24h": 92,
+        "rain_72h": 158,
+        "slope_deg": 29,
+        "geology_class": "Lahares antiguos",
+        "soil_class": "Franco arcilloso",
+        "deforestation_proxy": 0.52
+      },
+      "exposure": {
+        "population_estimate": 1320,
+        "households_estimate": 330
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pop-08"
+        ]
+      }
+    },
+    {
+      "id": "pop-04",
+      "name": "Vereda Calibio",
+      "municipality": "Popayan",
+      "type": "Vereda",
+      "centroid": [
+        2.421,
+        -76.592
+      ],
+      "polygon": [
+        [
+          2.431,
+          -76.606
+        ],
+        [
+          2.431,
+          -76.58
+        ],
+        [
+          2.412,
+          -76.58
+        ],
+        [
+          2.412,
+          -76.606
+        ]
+      ],
+      "riskScore": 0.81,
+      "confidence": "Alta",
+      "drivers": {
+        "rain_6h": 39,
+        "rain_24h": 104,
+        "rain_72h": 172,
+        "slope_deg": 33,
+        "geology_class": "Roca volcanica alterada",
+        "soil_class": "Andisol",
+        "deforestation_proxy": 0.58
+      },
+      "exposure": {
+        "population_estimate": 980,
+        "households_estimate": 240
+      },
+      "assets": {
+        "road_segment_ids": [
+          "inv-pop-20",
+          "inv-pop-08"
+        ]
+      }
+    }
+  ],
+  "roadSegments": [
+    {
+      "id": "inv-moc-45",
+      "name": "Invias Ruta 45 Mocoa - Pitalito",
+      "municipality": "Mocoa",
+      "coords": [
+        [
+          1.19,
+          -76.7
+        ],
+        [
+          1.165,
+          -76.67
+        ],
+        [
+          1.14,
+          -76.64
+        ],
+        [
+          1.11,
+          -76.62
+        ]
+      ],
+      "riskLevel": "Naranja",
+      "length_km": 42,
+      "note": "Taludes expuestos y cortes recientes"
+    },
+    {
+      "id": "inv-moc-11",
+      "name": "Corredor Mocoa - Villagarzon",
+      "municipality": "Mocoa",
+      "coords": [
+        [
+          1.17,
+          -76.69
+        ],
+        [
+          1.15,
+          -76.66
+        ],
+        [
+          1.12,
+          -76.64
+        ]
+      ],
+      "riskLevel": "Amarillo",
+      "length_km": 28,
+      "note": "Drenajes intermitentes"
+    },
+    {
+      "id": "inv-pas-25",
+      "name": "Corredor Pasto - Buesaco",
+      "municipality": "Pasto",
+      "coords": [
+        [
+          1.25,
+          -77.3
+        ],
+        [
+          1.22,
+          -77.27
+        ],
+        [
+          1.19,
+          -77.24
+        ]
+      ],
+      "riskLevel": "Naranja",
+      "length_km": 36,
+      "note": "Pendientes medianas y neblina"
+    },
+    {
+      "id": "inv-pas-03",
+      "name": "Anillo Lago Guamuez",
+      "municipality": "Pasto",
+      "coords": [
+        [
+          1.215,
+          -77.24
+        ],
+        [
+          1.2,
+          -77.22
+        ],
+        [
+          1.185,
+          -77.24
+        ]
+      ],
+      "riskLevel": "Amarillo",
+      "length_km": 18,
+      "note": "Material volcanico saturado"
+    },
+    {
+      "id": "inv-pop-20",
+      "name": "Via Panamericana - Popayan",
+      "municipality": "Popayan",
+      "coords": [
+        [
+          2.47,
+          -76.62
+        ],
+        [
+          2.44,
+          -76.61
+        ],
+        [
+          2.41,
+          -76.6
+        ]
+      ],
+      "riskLevel": "Rojo",
+      "length_km": 40,
+      "note": "Cortes de via y pendientes fuertes"
+    },
+    {
+      "id": "inv-pop-08",
+      "name": "Tramo Popayan - Timbio",
+      "municipality": "Popayan",
+      "coords": [
+        [
+          2.46,
+          -76.64
+        ],
+        [
+          2.44,
+          -76.63
+        ],
+        [
+          2.42,
+          -76.62
+        ]
+      ],
+      "riskLevel": "Amarillo",
+      "length_km": 22,
+      "note": "Afloramientos rocosos"
+    }
+  ],
+  "rainSeries": {
+    "Mocoa": [
+      {
+        "time": "h-24",
+        "observed": 6
+      },
+      {
+        "time": "h-21",
+        "observed": 8
+      },
+      {
+        "time": "h-18",
+        "observed": 12
+      },
+      {
+        "time": "h-15",
+        "observed": 18
+      },
+      {
+        "time": "h-12",
+        "observed": 22
+      },
+      {
+        "time": "h-9",
+        "observed": 15
+      },
+      {
+        "time": "h-6",
+        "observed": 26
+      },
+      {
+        "time": "h-3",
+        "observed": 34
+      },
+      {
+        "time": "h-1",
+        "observed": 19
+      },
+      {
+        "time": "h+1",
+        "forecast": 22,
+        "forecastLow": 16,
+        "forecastHigh": 30,
+        "forecastRange": 14
+      },
+      {
+        "time": "h+3",
+        "forecast": 18,
+        "forecastLow": 12,
+        "forecastHigh": 26,
+        "forecastRange": 14
+      },
+      {
+        "time": "h+6",
+        "forecast": 14,
+        "forecastLow": 8,
+        "forecastHigh": 20,
+        "forecastRange": 12
+      }
+    ],
+    "Pasto": [
+      {
+        "time": "h-24",
+        "observed": 4
+      },
+      {
+        "time": "h-21",
+        "observed": 5
+      },
+      {
+        "time": "h-18",
+        "observed": 7
+      },
+      {
+        "time": "h-15",
+        "observed": 10
+      },
+      {
+        "time": "h-12",
+        "observed": 12
+      },
+      {
+        "time": "h-9",
+        "observed": 9
+      },
+      {
+        "time": "h-6",
+        "observed": 15
+      },
+      {
+        "time": "h-3",
+        "observed": 18
+      },
+      {
+        "time": "h-1",
+        "observed": 12
+      },
+      {
+        "time": "h+1",
+        "forecast": 14,
+        "forecastLow": 9,
+        "forecastHigh": 19,
+        "forecastRange": 10
+      },
+      {
+        "time": "h+3",
+        "forecast": 11,
+        "forecastLow": 7,
+        "forecastHigh": 16,
+        "forecastRange": 9
+      },
+      {
+        "time": "h+6",
+        "forecast": 9,
+        "forecastLow": 6,
+        "forecastHigh": 13,
+        "forecastRange": 7
+      }
+    ],
+    "Popayan": [
+      {
+        "time": "h-24",
+        "observed": 5
+      },
+      {
+        "time": "h-21",
+        "observed": 7
+      },
+      {
+        "time": "h-18",
+        "observed": 9
+      },
+      {
+        "time": "h-15",
+        "observed": 14
+      },
+      {
+        "time": "h-12",
+        "observed": 18
+      },
+      {
+        "time": "h-9",
+        "observed": 13
+      },
+      {
+        "time": "h-6",
+        "observed": 20
+      },
+      {
+        "time": "h-3",
+        "observed": 24
+      },
+      {
+        "time": "h-1",
+        "observed": 16
+      },
+      {
+        "time": "h+1",
+        "forecast": 17,
+        "forecastLow": 12,
+        "forecastHigh": 23,
+        "forecastRange": 11
+      },
+      {
+        "time": "h+3",
+        "forecast": 14,
+        "forecastLow": 9,
+        "forecastHigh": 20,
+        "forecastRange": 11
+      },
+      {
+        "time": "h+6",
+        "forecast": 11,
+        "forecastLow": 7,
+        "forecastHigh": 16,
+        "forecastRange": 9
+      }
+    ]
+  },
+  "historicalEvents": [
+    {
+      "id": "sgc-01",
+      "municipality": "Mocoa",
+      "date": "2024-11-18",
+      "severity": "Alta",
+      "type": "Deslizamiento",
+      "coords": [
+        1.158,
+        -76.662
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-02",
+      "municipality": "Mocoa",
+      "date": "2023-08-04",
+      "severity": "Media",
+      "type": "Deslizamiento",
+      "coords": [
+        1.139,
+        -76.64
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-03",
+      "municipality": "Mocoa",
+      "date": "2022-03-26",
+      "severity": "Baja",
+      "type": "Deslizamiento",
+      "coords": [
+        1.17,
+        -76.676
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-04",
+      "municipality": "Pasto",
+      "date": "2024-09-30",
+      "severity": "Media",
+      "type": "Deslizamiento",
+      "coords": [
+        1.225,
+        -77.274
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-05",
+      "municipality": "Pasto",
+      "date": "2023-05-19",
+      "severity": "Alta",
+      "type": "Deslizamiento",
+      "coords": [
+        1.195,
+        -77.302
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-06",
+      "municipality": "Pasto",
+      "date": "2021-12-11",
+      "severity": "Baja",
+      "type": "Deslizamiento",
+      "coords": [
+        1.208,
+        -77.248
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-07",
+      "municipality": "Popayan",
+      "date": "2024-10-06",
+      "severity": "Alta",
+      "type": "Deslizamiento",
+      "coords": [
+        2.454,
+        -76.614
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-08",
+      "municipality": "Popayan",
+      "date": "2023-06-22",
+      "severity": "Media",
+      "type": "Deslizamiento",
+      "coords": [
+        2.467,
+        -76.632
+      ],
+      "source": "SGC"
+    },
+    {
+      "id": "sgc-09",
+      "municipality": "Popayan",
+      "date": "2022-02-10",
+      "severity": "Baja",
+      "type": "Deslizamiento",
+      "coords": [
+        2.424,
+        -76.598
+      ],
+      "source": "SGC"
+    }
+  ],
+  "ungrdRecords": {
+    "Mocoa": [
+      {
+        "id": "ungrd-01",
+        "municipality": "Mocoa",
+        "date": "2025-01-12",
+        "summary": "Afectacion vial por movimientos en masa en corredor rural. Coordinacion local para inspeccion."
+      },
+      {
+        "id": "ungrd-02",
+        "municipality": "Mocoa",
+        "date": "2024-10-02",
+        "summary": "Incremento de remocion en masa en ladera cercana a veredas. Se activan comites de riesgo."
+      }
+    ],
+    "Pasto": [
+      {
+        "id": "ungrd-03",
+        "municipality": "Pasto",
+        "date": "2024-12-05",
+        "summary": "Reporte de deslizamientos menores en via secundaria. Seguimiento municipal."
+      },
+      {
+        "id": "ungrd-04",
+        "municipality": "Pasto",
+        "date": "2023-11-19",
+        "summary": "Saturacion de suelos en sectores periurbanos. Se intensifica vigilancia."
+      }
+    ],
+    "Popayan": [
+      {
+        "id": "ungrd-05",
+        "municipality": "Popayan",
+        "date": "2024-08-21",
+        "summary": "Afectacion parcial de carretera por movimientos en masa. Coordinacion con Invias."
+      },
+      {
+        "id": "ungrd-06",
+        "municipality": "Popayan",
+        "date": "2023-04-17",
+        "summary": "Evaluacion de taludes con riesgo medio. Se solicita verificacion tecnica."
+      }
+    ]
+  },
+  "sourceCatalog": [
+    {
+      "id": "IDEAM",
+      "label": "IDEAM lluvia observada",
+      "category": "tiempo-real"
+    },
+    {
+      "id": "NASA",
+      "label": "NASA IMERG satelital",
+      "category": "tiempo-real"
+    },
+    {
+      "id": "SGC",
+      "label": "SGC inventario MM",
+      "category": "historico"
+    },
+    {
+      "id": "IGAC",
+      "label": "IGAC pendiente y suelo",
+      "category": "historico"
+    },
+    {
+      "id": "UNGRD",
+      "label": "UNGRD emergencias",
+      "category": "tiempo-real"
+    },
+    {
+      "id": "DANE",
+      "label": "DANE exposicion",
+      "category": "historico"
+    },
+    {
+      "id": "INVIAS",
+      "label": "Invias corredores",
+      "category": "infraestructura"
+    },
+    {
+      "id": "SENTINEL",
+      "label": "Sentinel proxy humedad",
+      "category": "tiempo-real"
+    }
+  ],
+  "rainOverlays": {
+    "Mocoa": [
+      {
+        "bounds": [
+          [
+            1.18,
+            -76.69
+          ],
+          [
+            1.13,
+            -76.62
+          ]
+        ],
+        "intensity": "alta"
+      },
+      {
+        "bounds": [
+          [
+            1.16,
+            -76.71
+          ],
+          [
+            1.12,
+            -76.66
+          ]
+        ],
+        "intensity": "media"
+      }
+    ],
+    "Pasto": [
+      {
+        "bounds": [
+          [
+            1.24,
+            -77.31
+          ],
+          [
+            1.19,
+            -77.24
+          ]
+        ],
+        "intensity": "media"
+      },
+      {
+        "bounds": [
+          [
+            1.22,
+            -77.29
+          ],
+          [
+            1.18,
+            -77.26
+          ]
+        ],
+        "intensity": "baja"
+      }
+    ],
+    "Popayan": [
+      {
+        "bounds": [
+          [
+            2.47,
+            -76.64
+          ],
+          [
+            2.42,
+            -76.58
+          ]
+        ],
+        "intensity": "alta"
+      },
+      {
+        "bounds": [
+          [
+            2.46,
+            -76.66
+          ],
+          [
+            2.41,
+            -76.61
+          ]
+        ],
+        "intensity": "media"
+      }
+    ]
+  }
+}

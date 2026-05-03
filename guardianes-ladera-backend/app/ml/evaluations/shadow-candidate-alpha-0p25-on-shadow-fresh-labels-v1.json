@@ -1,0 +1,1046 @@
+{
+  "evaluation_id": "spatial-risk-model-evaluation",
+  "version": "shadow-candidate-alpha-0p25-on-shadow-fresh-labels-v1",
+  "artifact_type": "model_evaluation",
+  "model_version": "shadow-candidate-alpha-0p25",
+  "dataset_version": "shadow-fresh-labels-v1",
+  "evaluated_at": "2026-04-29T18:18:38+00:00",
+  "model_summary": {
+    "model_id": "trained-spatial-seed-linear-regression",
+    "artifact_type": "trained_linear_model",
+    "model_family": "linear_ridge",
+    "training_dataset": "shadow-fresh-labels-v1",
+    "training_rows": 2,
+    "training_metrics": {
+      "mae": 0.45,
+      "rmse": 0.636396,
+      "max_abs_error": 0.9,
+      "r2": -1.0
+    },
+    "hyperparameters": {},
+    "calibration_method": "identity"
+  },
+  "dataset_summary": {
+    "dataset_id": "spatial-risk-training-dataset",
+    "artifact_type": "training_dataset",
+    "description": "Versioned supervised training dataset exported from governed zone outcome labels.",
+    "provenance": {
+      "exported_at": "2026-04-29T18:18:38+00:00",
+      "label_ids": [
+        2,
+        1
+      ],
+      "label_sources": [
+        "field_validation"
+      ],
+      "matched_predictions": 2,
+      "unresolved_labels": 0,
+      "feature_source": "linked prediction runs and explanation traces",
+      "label_source": "zone_outcome_labels.target_score",
+      "dataset_mode": "labels",
+      "dataset_family": "labels:field_validation",
+      "time_window": {
+        "kind": "observed_outcomes",
+        "reference_at": "2026-03-21T00:00:00+00:00",
+        "start_at": "2026-03-20T00:00:00+00:00",
+        "end_at": "2026-03-21T00:00:00+00:00",
+        "span_days": 1
+      },
+      "source": "governed_zone_outcome_labels",
+      "label_source_families": [
+        "field_validation"
+      ],
+      "dataset_taxonomy": {
+        "family_root": "labels",
+        "family_variant": "field_validation",
+        "source": "governed_zone_outcome_labels",
+        "source_family": "governed_zone_outcome_labels",
+        "source_families": [
+          "field_validation"
+        ],
+        "supervision_tier": "observed",
+        "signal_type": "direct",
+        "geographic_granularity": "zone",
+        "taxonomy_group": "labels:observed:zone:direct",
+        "stability_group": "labels:observed:zone:direct"
+      },
+      "evaluation_cohort": {
+        "cohort_key": "labels:observed:zone:direct:month:2026-03",
+        "cohort_group": "labels:observed:zone:direct:month",
+        "bucket_type": "month",
+        "bucket_label": "2026-03",
+        "bucket_index": 24315,
+        "bucket_start_at": "2026-03-01T00:00:00+00:00",
+        "bucket_end_at": "2026-03-31T23:59:59+00:00",
+        "reference_at": "2026-03-21T00:00:00+00:00"
+      },
+      "validation_policy": {
+        "strategy": "deterministic_zone_hash_holdout",
+        "unit": "zone_id",
+        "bucket_count": 3,
+        "validation_bucket": 0,
+        "leakage_guard": "zone_level_entity_holdout"
+      },
+      "sampling_policy": {
+        "strategy": "confirmed_outcome_labels_with_linked_features",
+        "label_source": "governed_zone_outcome_labels",
+        "feature_source": "linked_prediction_runs_or_backfill"
+      },
+      "backfilled_predictions": 2
+    },
+    "summary": {
+      "rows": 2,
+      "zones": 2,
+      "splits": {
+        "train_rows": 1,
+        "validation_rows": 1
+      },
+      "phase_breakdown": {
+        "label-2": 1,
+        "label-1": 1
+      },
+      "zone_ids": [
+        "moc-01",
+        "moc-02"
+      ],
+      "validation_policy": {
+        "strategy": "deterministic_zone_hash_holdout",
+        "unit": "zone_id",
+        "bucket_count": 3,
+        "validation_bucket": 0,
+        "leakage_guard": "zone_level_entity_holdout"
+      },
+      "sampling_policy": {
+        "strategy": "confirmed_outcome_labels_with_linked_features",
+        "label_source": "governed_zone_outcome_labels",
+        "feature_source": "linked_prediction_runs_or_backfill"
+      },
+      "row_context_fields": [
+        "eventGroupId",
+        "featureRunCompletedAt",
+        "featureRunId",
+        "featureSnapshotSource",
+        "labelId",
+        "labelSource",
+        "labelStatus",
+        "modelVersion",
+        "observedAt",
+        "predictionId",
+        "spatialBlockId",
+        "splitUnit",
+        "temporalHoldoutTag",
+        "validationStrategy"
+      ],
+      "dataset_family": "labels:field_validation",
+      "label_source_families": [
+        "field_validation"
+      ],
+      "time_window": {
+        "kind": "observed_outcomes",
+        "reference_at": "2026-03-21T00:00:00+00:00",
+        "start_at": "2026-03-20T00:00:00+00:00",
+        "end_at": "2026-03-21T00:00:00+00:00",
+        "span_days": 1
+      },
+      "dataset_taxonomy": {
+        "family_root": "labels",
+        "family_variant": "field_validation",
+        "source": "governed_zone_outcome_labels",
+        "source_family": "governed_zone_outcome_labels",
+        "source_families": [
+          "field_validation"
+        ],
+        "supervision_tier": "observed",
+        "signal_type": "direct",
+        "geographic_granularity": "zone",
+        "taxonomy_group": "labels:observed:zone:direct",
+        "stability_group": "labels:observed:zone:direct"
+      },
+      "evaluation_cohort": {
+        "cohort_key": "labels:observed:zone:direct:month:2026-03",
+        "cohort_group": "labels:observed:zone:direct:month",
+        "bucket_type": "month",
+        "bucket_label": "2026-03",
+        "bucket_index": 24315,
+        "bucket_start_at": "2026-03-01T00:00:00+00:00",
+        "bucket_end_at": "2026-03-31T23:59:59+00:00",
+        "reference_at": "2026-03-21T00:00:00+00:00"
+      },
+      "labels": 2,
+      "label_ids": [
+        2,
+        1
+      ],
+      "label_sources": [
+        "field_validation"
+      ],
+      "matched_predictions": 2,
+      "unresolved_labels": 0,
+      "backfilled_predictions": 2
+    }
+  },
+  "metrics": {
+    "overall": {
+      "rows": 2,
+      "raw_metrics": {
+        "mae": 0.45,
+        "rmse": 0.636396,
+        "max_abs_error": 0.9,
+        "r2": -1.0,
+        "mean_signed_error": -0.45,
+        "mean_prediction": 0.05,
+        "mean_target": 0.5,
+        "within_005_rate": 0.5,
+        "within_010_rate": 0.5
+      },
+      "calibrated_metrics": {
+        "mae": 0.45,
+        "rmse": 0.615549,
+        "max_abs_error": 0.87,
+        "r2": -0.871111,
+        "mean_signed_error": -0.42,
+        "mean_prediction": 0.08,
+        "mean_target": 0.5,
+        "within_005_rate": 0.5,
+        "within_010_rate": 0.5
+      },
+      "raw_probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 0.5,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1": null,
+        "balanced_accuracy": 0.5,
+        "mcc": null,
+        "auroc": 0.5,
+        "auprc": 1.0,
+        "brier_score": 0.4525,
+        "ece": 0.9,
+        "calibration_bins": 10
+      },
+      "probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 0.5,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1": null,
+        "balanced_accuracy": 0.5,
+        "mcc": null,
+        "auroc": 0.5,
+        "auprc": 1.0,
+        "brier_score": 0.4264,
+        "ece": 0.84,
+        "calibration_bins": 10
+      },
+      "risk_level_accuracy": 0.5,
+      "target_risk_level_counts": {
+        "Verde": 1,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 1
+      },
+      "predicted_risk_level_counts": {
+        "Verde": 2,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 0
+      },
+      "risk_level_confusion_matrix": {
+        "Verde": {
+          "Verde": 1,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Amarillo": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Naranja": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Rojo": {
+          "Verde": 1,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        }
+      }
+    },
+    "train": {
+      "rows": 1,
+      "raw_metrics": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "max_abs_error": 0.0,
+        "r2": 1.0,
+        "mean_signed_error": 0.0,
+        "mean_prediction": 0.05,
+        "mean_target": 0.05,
+        "within_005_rate": 1.0,
+        "within_010_rate": 1.0
+      },
+      "calibrated_metrics": {
+        "mae": 0.03,
+        "rmse": 0.03,
+        "max_abs_error": 0.03,
+        "r2": 1.0,
+        "mean_signed_error": 0.03,
+        "mean_prediction": 0.08,
+        "mean_target": 0.05,
+        "within_005_rate": 1.0,
+        "within_010_rate": 1.0
+      },
+      "raw_probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 0.0,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": null,
+        "specificity": 1.0,
+        "f1": null,
+        "balanced_accuracy": null,
+        "mcc": null,
+        "auroc": null,
+        "auprc": null,
+        "brier_score": 0.0025,
+        "ece": 0.1,
+        "calibration_bins": 10
+      },
+      "probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 0.0,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": null,
+        "specificity": 1.0,
+        "f1": null,
+        "balanced_accuracy": null,
+        "mcc": null,
+        "auroc": null,
+        "auprc": null,
+        "brier_score": 0.0064,
+        "ece": 0.16,
+        "calibration_bins": 10
+      },
+      "risk_level_accuracy": 1.0,
+      "target_risk_level_counts": {
+        "Verde": 1,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 0
+      },
+      "predicted_risk_level_counts": {
+        "Verde": 1,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 0
+      },
+      "risk_level_confusion_matrix": {
+        "Verde": {
+          "Verde": 1,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Amarillo": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Naranja": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Rojo": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        }
+      }
+    },
+    "validation": {
+      "rows": 1,
+      "raw_metrics": {
+        "mae": 0.9,
+        "rmse": 0.9,
+        "max_abs_error": 0.9,
+        "r2": 1.0,
+        "mean_signed_error": -0.9,
+        "mean_prediction": 0.05,
+        "mean_target": 0.95,
+        "within_005_rate": 0.0,
+        "within_010_rate": 0.0
+      },
+      "calibrated_metrics": {
+        "mae": 0.87,
+        "rmse": 0.87,
+        "max_abs_error": 0.87,
+        "r2": 1.0,
+        "mean_signed_error": -0.87,
+        "mean_prediction": 0.08,
+        "mean_target": 0.95,
+        "within_005_rate": 0.0,
+        "within_010_rate": 0.0
+      },
+      "raw_probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 1.0,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": null,
+        "f1": null,
+        "balanced_accuracy": null,
+        "mcc": null,
+        "auroc": null,
+        "auprc": 1.0,
+        "brier_score": 0.9025,
+        "ece": 1.9,
+        "calibration_bins": 10
+      },
+      "probability_metrics": {
+        "positive_threshold": 0.5,
+        "positive_risk_levels": [
+          "Naranja",
+          "Rojo"
+        ],
+        "positive_class": "elevated_risk",
+        "prevalence": 1.0,
+        "positive_prediction_rate": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": null,
+        "f1": null,
+        "balanced_accuracy": null,
+        "mcc": null,
+        "auroc": null,
+        "auprc": 1.0,
+        "brier_score": 0.8464,
+        "ece": 1.84,
+        "calibration_bins": 10
+      },
+      "risk_level_accuracy": 0.0,
+      "target_risk_level_counts": {
+        "Verde": 0,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 1
+      },
+      "predicted_risk_level_counts": {
+        "Verde": 1,
+        "Amarillo": 0,
+        "Naranja": 0,
+        "Rojo": 0
+      },
+      "risk_level_confusion_matrix": {
+        "Verde": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Amarillo": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Naranja": {
+          "Verde": 0,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        },
+        "Rojo": {
+          "Verde": 1,
+          "Amarillo": 0,
+          "Naranja": 0,
+          "Rojo": 0
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "feature_importance": {
+      "method": "absolute_linear_coefficient",
+      "feature_count": 11,
+      "total_absolute_magnitude": 0.0,
+      "top_features": [
+        {
+          "feature": "deforestation_proxy",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 1
+        },
+        {
+          "feature": "intersecting_road_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 2
+        },
+        {
+          "feature": "intersecting_road_length_km",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 3
+        },
+        {
+          "feature": "municipality_event_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 4
+        },
+        {
+          "feature": "rain_24h",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 5
+        }
+      ],
+      "features": [
+        {
+          "feature": "deforestation_proxy",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 1
+        },
+        {
+          "feature": "intersecting_road_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 2
+        },
+        {
+          "feature": "intersecting_road_length_km",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 3
+        },
+        {
+          "feature": "municipality_event_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 4
+        },
+        {
+          "feature": "rain_24h",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 5
+        },
+        {
+          "feature": "rain_72h",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 6
+        },
+        {
+          "feature": "rain_overlay_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 7
+        },
+        {
+          "feature": "rain_overlay_peak_intensity",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 8
+        },
+        {
+          "feature": "recent_zone_event_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 9
+        },
+        {
+          "feature": "slope_deg",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 10
+        },
+        {
+          "feature": "zone_event_count",
+          "magnitude": 0.0,
+          "absolute_magnitude": 0.0,
+          "share": 0.0,
+          "direction": "neutral",
+          "rank": 11
+        }
+      ]
+    },
+    "calibration_effect": {
+      "method": "identity",
+      "applied": false,
+      "slope": 1.0,
+      "intercept": 0.0,
+      "validation_rows": 1,
+      "validation_rmse_before": 0.9,
+      "validation_rmse_after": 0.9,
+      "validation_rmse_improvement": 0.0,
+      "validation_mae_before": 0.9,
+      "validation_mae_after": 0.9,
+      "validation_mae_improvement": 0.0
+    },
+    "validation_slices": {
+      "by_phase": {
+        "label-2": {
+          "rows": 1,
+          "raw_metrics": {
+            "mae": 0.9,
+            "rmse": 0.9,
+            "max_abs_error": 0.9,
+            "r2": 1.0,
+            "mean_signed_error": -0.9,
+            "mean_prediction": 0.05,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "calibrated_metrics": {
+            "mae": 0.87,
+            "rmse": 0.87,
+            "max_abs_error": 0.87,
+            "r2": 1.0,
+            "mean_signed_error": -0.87,
+            "mean_prediction": 0.08,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "raw_probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.9025,
+            "ece": 1.9,
+            "calibration_bins": 10
+          },
+          "probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.8464,
+            "ece": 1.84,
+            "calibration_bins": 10
+          },
+          "risk_level_accuracy": 0.0
+        }
+      },
+      "by_target_risk_level": {
+        "Rojo": {
+          "rows": 1,
+          "raw_metrics": {
+            "mae": 0.9,
+            "rmse": 0.9,
+            "max_abs_error": 0.9,
+            "r2": 1.0,
+            "mean_signed_error": -0.9,
+            "mean_prediction": 0.05,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "calibrated_metrics": {
+            "mae": 0.87,
+            "rmse": 0.87,
+            "max_abs_error": 0.87,
+            "r2": 1.0,
+            "mean_signed_error": -0.87,
+            "mean_prediction": 0.08,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "raw_probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.9025,
+            "ece": 1.9,
+            "calibration_bins": 10
+          },
+          "probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.8464,
+            "ece": 1.84,
+            "calibration_bins": 10
+          },
+          "risk_level_accuracy": 0.0
+        }
+      },
+      "by_spatial_block": {
+        "moc": {
+          "rows": 1,
+          "raw_metrics": {
+            "mae": 0.9,
+            "rmse": 0.9,
+            "max_abs_error": 0.9,
+            "r2": 1.0,
+            "mean_signed_error": -0.9,
+            "mean_prediction": 0.05,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "calibrated_metrics": {
+            "mae": 0.87,
+            "rmse": 0.87,
+            "max_abs_error": 0.87,
+            "r2": 1.0,
+            "mean_signed_error": -0.87,
+            "mean_prediction": 0.08,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "raw_probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.9025,
+            "ece": 1.9,
+            "calibration_bins": 10
+          },
+          "probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.8464,
+            "ece": 1.84,
+            "calibration_bins": 10
+          },
+          "risk_level_accuracy": 0.0
+        }
+      },
+      "by_temporal_holdout_tag": {
+        "validation:2026-03-21": {
+          "rows": 1,
+          "raw_metrics": {
+            "mae": 0.9,
+            "rmse": 0.9,
+            "max_abs_error": 0.9,
+            "r2": 1.0,
+            "mean_signed_error": -0.9,
+            "mean_prediction": 0.05,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "calibrated_metrics": {
+            "mae": 0.87,
+            "rmse": 0.87,
+            "max_abs_error": 0.87,
+            "r2": 1.0,
+            "mean_signed_error": -0.87,
+            "mean_prediction": 0.08,
+            "mean_target": 0.95,
+            "within_005_rate": 0.0,
+            "within_010_rate": 0.0
+          },
+          "raw_probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.9025,
+            "ece": 1.9,
+            "calibration_bins": 10
+          },
+          "probability_metrics": {
+            "positive_threshold": 0.5,
+            "positive_risk_levels": [
+              "Naranja",
+              "Rojo"
+            ],
+            "positive_class": "elevated_risk",
+            "prevalence": 1.0,
+            "positive_prediction_rate": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": null,
+            "f1": null,
+            "balanced_accuracy": null,
+            "mcc": null,
+            "auroc": null,
+            "auprc": 1.0,
+            "brier_score": 0.8464,
+            "ece": 1.84,
+            "calibration_bins": 10
+          },
+          "risk_level_accuracy": 0.0
+        }
+      }
+    }
+  },
+  "top_errors": [
+    {
+      "zoneId": "moc-02",
+      "phase": "label-2",
+      "split": "validation",
+      "targetScore": 0.95,
+      "rawModelScore": 0.05,
+      "predictedScore": 0.08,
+      "absError": 0.87,
+      "signedError": -0.87,
+      "targetRiskLevel": "Rojo",
+      "predictedRiskLevel": "Verde",
+      "componentScores": {
+        "rain_72h": -0.0,
+        "rain_24h": -0.0,
+        "slope_deg": -0.0,
+        "municipality_event_count": 0.0,
+        "zone_event_count": -0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 0.0,
+        "rain_overlay_peak_intensity": 0.0,
+        "deforestation_proxy": -0.0
+      },
+      "featureVector": {
+        "rain_72h": 152.0,
+        "rain_24h": 96.0,
+        "slope_deg": 26.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 1.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.0
+      },
+      "context": {
+        "labelId": 2,
+        "observedAt": "2026-03-21T00:00:00+00:00",
+        "labelSource": "field_validation",
+        "labelStatus": "confirmed",
+        "featureRunId": 2,
+        "featureRunCompletedAt": "2026-04-29T18:15:37+00:00",
+        "predictionId": 4,
+        "modelVersion": "trained-spatial-seed-v1",
+        "featureSnapshotSource": "backfill",
+        "spatialBlockId": "moc",
+        "eventGroupId": "label:2",
+        "temporalHoldoutTag": "validation:2026-03-21",
+        "splitUnit": "zone_id",
+        "validationStrategy": "deterministic_zone_hash_holdout"
+      }
+    },
+    {
+      "zoneId": "moc-01",
+      "phase": "label-1",
+      "split": "train",
+      "targetScore": 0.05,
+      "rawModelScore": 0.05,
+      "predictedScore": 0.08,
+      "absError": 0.03,
+      "signedError": 0.03,
+      "targetRiskLevel": "Verde",
+      "predictedRiskLevel": "Verde",
+      "componentScores": {
+        "rain_72h": 0.0,
+        "rain_24h": 0.0,
+        "slope_deg": 0.0,
+        "municipality_event_count": 0.0,
+        "zone_event_count": 0.0,
+        "recent_zone_event_count": 0.0,
+        "intersecting_road_count": 0.0,
+        "intersecting_road_length_km": 0.0,
+        "rain_overlay_count": 0.0,
+        "rain_overlay_peak_intensity": 0.0,
+        "deforestation_proxy": 0.0
+      },
+      "featureVector": {
+        "rain_72h": 186.0,
+        "rain_24h": 112.0,
+        "slope_deg": 31.0,
+        "municipality_event_count": 3.0,
+        "zone_event_count": 2.0,
+        "recent_zone_event_count": 1.0,
+        "intersecting_road_count": 2.0,
+        "intersecting_road_length_km": 70.0,
+        "rain_overlay_count": 2.0,
+        "rain_overlay_peak_intensity": 3.0,
+        "deforestation_proxy": 0.62
+      },
+      "context": {
+        "labelId": 1,
+        "observedAt": "2026-03-20T00:00:00+00:00",
+        "labelSource": "field_validation",
+        "labelStatus": "confirmed",
+        "featureRunId": 2,
+        "featureRunCompletedAt": "2026-04-29T18:15:37+00:00",
+        "predictionId": 2,
+        "modelVersion": "trained-spatial-seed-v1",
+        "featureSnapshotSource": "backfill",
+        "spatialBlockId": "moc",
+        "eventGroupId": "label:1",
+        "temporalHoldoutTag": "train:2026-03-20",
+        "splitUnit": "zone_id",
+        "validationStrategy": "deterministic_zone_hash_holdout"
+      }
+    }
+  ]
+}

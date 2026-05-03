@@ -1,0 +1,71 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+
+# SQLite databases
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.claude
+*.md
+!README.md
+
+# Backend artifacts
+.provider_cache/
+.runtime_tmp/
+guardianes-ladera-backend/.provider_cache/
+guardianes-ladera-backend/.codex-pytest-cache/
+guardianes-ladera-backend/.pytest_cache/
+guardianes-ladera-backend/.pytest_tmp/
+
+# Large local raw-data drops
+data-raw/
+
+# Local official-source inputs and extracted inspection folders
+guardianes-ladera-backend/app/data/_tmp*/
+guardianes-ladera-backend/app/data/tmp*/
+guardianes-ladera-backend/app/data/*.zip
+guardianes-ladera-backend/app/data/*.xlsx
+guardianes-ladera-backend/app/data/invias.geojson
+
+# Generated inventory/modeling outputs
+guardianes-ladera-backend/data/
+guardianes-ladera-backend/app/ml/artifacts/real-labels-inventory-*.json
+guardianes-ladera-backend/app/ml/artifacts/slice-probe-*.json
+guardianes-ladera-backend/app/ml/training_datasets/*.json
+!guardianes-ladera-backend/app/ml/training_datasets/training-spatial-seed-v1.json
+guardianes-ladera-backend/app/ml/evaluations/*real-labels-inventory*.json
+guardianes-ladera-backend/app/ml/drift_reports/
+guardianes-ladera-backend/app/ml/selection_runs/
+guardianes-ladera-backend/app/ml/shadow_runs/
+
+# Logs
+*.log
+npm-debug.log*
+
